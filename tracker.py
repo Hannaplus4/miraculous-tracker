@@ -1,3 +1,4 @@
+```python
 import requests
 import json
 from m3u8 import parse as m3u8parser
@@ -12,7 +13,7 @@ PARAMS = {
     "caller": "web",
     "locale": "en-US",
     "pfm": "web",
-    "sf": "143441",          # US storefront
+    "sf": "143441",
     "v": "96",
     "utsk": "6e3013c6d6fae3c2:::::235656c069bb0efb",
 }
@@ -67,12 +68,10 @@ def obtener_hls_url(episode_id: str):
         playables = data.get("data", {}).get("content", {}).get("playables", [])
 
         for p in playables:
-            # Varias estructuras posibles según el tipo de contenido
             assets = p.get("assets") or {}
             if "hlsUrl" in assets:
                 return assets["hlsUrl"]
 
-            # Algunas respuestas vienen anidadas en itunesMediaApiData
             itunes = p.get("itunesMediaApiData") or {}
             for offer in itunes.get("offers", []):
                 if "hlsUrl" in offer:
@@ -124,25 +123,14 @@ def escanear_episodios():
 
             ep_key = f"S{season_num:02d}E{ep_num:02d}"
 
-            # 1. Idiomas de audio ya vienen en el episodio
-            audios_api = []
-            for lang in ep.get("originalSpokenLanguages", []):
-                locale = lang.get("locale") or lang.get("displayName", "")
-                if locale:
-                    audios_api.append(ReplaceCodeLanguages(locale))
-
-            # 2. Intentamos obtener subtítulos (y audios más completos) del HLS
+            # Solo audios y subtítulos del manifiesto HLS
             hls_url = obtener_hls_url(ep_id)
-            audios_hls, subs = obtener_idiomas_de_m3u8(hls_url) if hls_url else ([], [])
-
-            # Preferimos los del HLS si existen, sino los de la API
-            audios = audios_hls if audios_hls else sorted(set(audios_api))
+            audios, subs = obtener_idiomas_de_m3u8(hls_url) if hls_url else ([], [])
 
             episodios_info[ep_key] = {
                 "titulo": title,
                 "audios": audios,
                 "subtitulos": subs,
-                "hls_url": hls_url,          # opcional, útil para debug
             }
 
             print(f"{ep_key} - {title} | Audios: {len(audios)} | Subs: {len(subs)}")
@@ -167,3 +155,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
