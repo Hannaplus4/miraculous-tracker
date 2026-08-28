@@ -35,8 +35,8 @@ def obtener_idiomas_de_m3u8(m3u8_url):
         return [], []
 
 def escanear_episodios():
-    # Usamos la URL completa de la API incluyendo los parámetros que evitan el error de parámetros faltantes
-    api_url = "https://tv.apple.com/api/uts/v3/shows/umc.cmc.7adu8wmjugygtdhfamor58yn8/episodes?caller=web&includeSeasonSummary=false&locale=en-US&pfm=web&selectedSeasonEpisodesOnly=false&sf=143441&v=96"
+    # URL completa con todos los parámetros de la API, incluyendo el utsk y utscf requeridos
+    api_url = "https://tv.apple.com/api/uts/v3/shows/umc.cmc.7adu8wmjugygtdhfamor58yn8/episodes?caller=web&includeSeasonSummary=false&locale=en-US&pfm=web&selectedSeasonEpisodesOnly=false&sf=143441&utscf=OjAAAAEAAAAAAAIAEAAAACMAKwAtAA%7E%7E&utsk=6e3013c6d6fae3c2%3A%3A%3A%3A%3A%3A235656c069bb0efb&v=96"
     
     try:
         res = requests.get(api_url, headers=HEADERS, timeout=15)
