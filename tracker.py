@@ -7,14 +7,6 @@ HEADERS = {
     "Referer": "https://tv.apple.com/"
 }
 
-PARAMS = {
-    "caller": "web",
-    "locale": "en-US",
-    "pfm": "web",
-    "sf": "143441",
-    "v": "96"
-}
-
 def ReplaceCodeLanguages(X):
     X = X.lower().replace('_subtitle_dialog_0', '').replace('_dialog_0', '')
     return X.replace('es-mx', 'es-la').replace('es-419', 'es-la').replace('es-us', 'es-la')
@@ -42,35 +34,19 @@ def obtener_idiomas_de_m3u8(m3u8_url):
         print(f"Error leyendo M3U8: {e}")
         return [], []
 
-def obtener_hls_episodio(episode_id):
-    """Usa el endpoint de contenido exacto del script original de Apple TV"""
-    content_url = f"https://tv.apple.com/api/uts/v3/channel/content?id={episode_id}"
-    try:
-        res = requests.get(content_url, params=PARAMS, headers=HEADERS, timeout=10)
-        if res.status_code != 200:
-            # Intentar ruta alternativa de producto si la del canal varía
-            return None
-        
-        data = res.json()
-        resp_content = data.get('data', {}).get('content', {})
-        playables = resp_content.get('playables', [])
-        
-        for x in playables:
-            if 'assets' in x and 'hlsUrl' in x['assets']:
-                return x['assets']['hlsUrl']
-    except Exception as e:
-        print(f"Error obteniendo HLS para ID {episode_id}: {e}")
-    return None
-
 def escanear_episodios():
     base_url = "https://tv.apple.com/api/uts/v3/shows/umc.cmc.7adu8wmjugygtdhfamor58yn8/episodes"
-    params = PARAMS.copy()
-    params.update({
+    params = {
+        "caller": "web",
         "includeSeasonSummary": "false",
+        "locale": "en-US",
+        "pfm": "web",
         "selectedSeasonEpisodesOnly": "false",
+        "sf": "143441",
         "utscf": "OjAAAAEAAAAAAAIAEAAAACMAKwAtAA~~",
-        "utsk": "6e3013c6d6fae3c2:::::235656c069bb0efb"
-    })
+        "utsk": "6e3013c6d6fae3c2:::::235656c069bb0efb",
+        "v": "96"
+    }
     
     episodios_info = {}
     next_token = None
@@ -99,15 +75,21 @@ def escanear_episodios():
             for ep in episodes_list:
                 season_num = ep.get('seasonNumber')
                 ep_num = ep.get('episodeNumber')
-                ep_id = ep.get('id')
                 title = ep.get('title')
                 
-                if season_num is None or ep_num is None or not ep_id:
+                if season_num is None or ep_num is None:
                     continue
                     
                 ep_key = f"S{season_num:02d}E{ep_num:02d}"
                 
-                hls_url = obtener_hls_episodio(ep_id)
+                # Buscamos el hlsUrl directamente en los playables de la respuesta principal
+                hls_url = None
+                playables = ep.get('playables', [])
+                for p in playables:
+                    if 'assets' in p and 'hlsUrl' in p['assets']:
+                        hls_url = p['assets']['hlsUrl']
+                        break
+                
                 audios, subs = obtener_idiomas_de_m3u8(hls_url) if hls_url else ([], [])
                 
                 episodios_info[ep_key] = {"titulo": title, "audios": audios, "subtitulos": subs}
@@ -125,7 +107,7 @@ def escanear_episodios():
 
 def main():
     archivo = 'datos.json'
-    print("Iniciando escaneo profundo de Miraculous...")
+    print("Iniciando escaneo completo de Miraculous...")
     nuevos_datos = escanear_episodios()
     
     if nuevos_datos:
