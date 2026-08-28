@@ -1,7 +1,9 @@
 import requests
 import json
 import re
+import os
 from urllib.parse import urlparse, urlunparse
+from pathlib import Path
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -19,7 +21,9 @@ PARAMS = {
 }
 
 SHOW_ID = "umc.cmc.7adu8wmjugygtdhfamor58yn8"
-STOREFRONT = "ie"  # más idiomas que US
+STOREFRONT = "ie"
+ARCHIVO = "datos.json"
+DISCORD_WEBHOOK = os.environ.get("DISCORD_WEBHOOK", "")
 
 
 def limpiar_idioma(texto: str) -> str:
@@ -108,7 +112,6 @@ def obtener_idiomas_pagina(episode_url: str):
 
 
 def obtener_temporadas():
-    """Lista todas las temporadas del show."""
     url = f"https://tv.apple.com/api/uts/v3/shows/{SHOW_ID}/episodes"
     params = PARAMS.copy()
     params["includeSeasonSummary"] = "true"
@@ -121,10 +124,6 @@ def obtener_temporadas():
 
 
 def obtener_episodios_temporada(season_id: str, episode_count: int):
-    """
-    Recorre la ventana deslizante del API hasta reunir todos
-    los episodios de una temporada.
-    """
     url = f"https://tv.apple.com/api/uts/v3/shows/{SHOW_ID}/episodes"
     vistos = {}
     selected_episode_id = None
@@ -147,9 +146,6 @@ def obtener_episodios_temporada(season_id: str, episode_count: int):
 
         antes = len(vistos)
         for ep in batch:
-            if ep.get("seasonId") != season_id and ep.get("id"):
-                # a veces mezcla con temporada anterior/siguiente
-                pass
             ep_num = ep.get("episodeNumber")
             if ep_num is not None:
                 vistos[ep_num] = ep
@@ -159,7 +155,6 @@ def obtener_episodios_temporada(season_id: str, episode_count: int):
         else:
             sin_progreso = 0
 
-        # Avanzar la ventana hacia el final del batch
         selected_episode_id = batch[-1].get("id")
         if not selected_episode_id:
             break
@@ -171,7 +166,7 @@ def escanear_episodios():
     temporadas = obtener_temporadas()
     print(f"Temporadas encontradas: {len(temporadas)}")
     for t in temporadas:
-        print(f"  S{t.get('seasonNumber'):02d} - {t.get('title')} ({t.get('episodeCount')} eps) id={t.get('id')}")
+        print(f"  S{t.get('seasonNumber'):02d} - {t.get('title')} ({t.get('episodeCount')} eps)")
 
     episodios_info = {}
 
@@ -205,16 +200,119 @@ def escanear_episodios():
     return episodios_info
 
 
-def main():
-    print("Iniciando escaneo de todas las temporadas...")
-    datos = escanear_episodios()
+def cargar_anteriores():
+    path = Path(ARCHIVO)
+    if not path.exists():
+        return {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
 
-    if datos:
-        with open("datos.json", "w", encoding="utf-8") as f:
-            json.dump(datos, f, indent=4, ensure_ascii=False)
-        print(f"\nListo. Total episodios: {len(datos)}")
-    else:
+
+def comparar(anteriores: dict, nuevos: dict) -> list:
+    """Lista de cambios con episodio concreto."""
+    cambios = []
+
+    for key in sorted(nuevos.keys()):
+        if key not in anteriores:
+            ep = nuevos[key]
+            cambios.append(
+                f"**NUEVO** `{key}` — {ep.get('titulo')}\n"
+                f"Audios: {', '.join(ep.get('audios') or []) or '—'}\n"
+                f"Subs: {', '.join(ep.get('subtitulos') or []) or '—'}"
+            )
+            continue
+
+        old = anteriores[key]
+        new = nuevos[key]
+
+        old_audios = set(old.get("audios") or [])
+        new_audios = set(new.get("audios") or [])
+        old_subs = set(old.get("subtitulos") or [])
+        new_subs = set(new.get("subtitulos") or [])
+
+        audios_add = sorted(new_audios - old_audios)
+        audios_del = sorted(old_audios - new_audios)
+        subs_add = sorted(new_subs - old_subs)
+        subs_del = sorted(old_subs - new_subs)
+
+        if audios_add or audios_del or subs_add or subs_del:
+            lineas = [f"**CAMBIO** `{key}` — {new.get('titulo')}"]
+            if audios_add:
+                lineas.append(f"+ Audios: {', '.join(audios_add)}")
+            if audios_del:
+                lineas.append(f"- Audios: {', '.join(audios_del)}")
+            if subs_add:
+                lineas.append(f"+ Subs: {', '.join(subs_add)}")
+            if subs_del:
+                lineas.append(f"- Subs: {', '.join(subs_del)}")
+            cambios.append("\n".join(lineas))
+
+    for key in sorted(anteriores.keys()):
+        if key not in nuevos:
+            cambios.append(
+                f"**ELIMINADO** `{key}` — {anteriores[key].get('titulo')}"
+            )
+
+    return cambios
+
+
+def enviar_discord(cambios: list):
+    if not DISCORD_WEBHOOK:
+        print("DISCORD_WEBHOOK no configurado.")
+        for c in cambios:
+            print(c)
+            print()
+        return
+
+    header = f"**Miraculous Tracker** — {len(cambios)} cambio(s)\n\n"
+    chunks = []
+    actual = header
+
+    for c in cambios:
+        bloque = c + "\n\n"
+        if len(actual) + len(bloque) > 1900:
+            chunks.append(actual)
+            actual = bloque
+        else:
+            actual += bloque
+    if actual.strip():
+        chunks.append(actual)
+
+    for i, chunk in enumerate(chunks):
+        res = requests.post(DISCORD_WEBHOOK, json={"content": chunk}, timeout=15)
+        if res.status_code >= 400:
+            print(f"Error Discord ({res.status_code}): {res.text}")
+        else:
+            print(f"Discord OK ({i + 1}/{len(chunks)})")
+
+
+def main():
+    print("Iniciando escaneo...")
+    anteriores = cargar_anteriores()
+    nuevos = escanear_episodios()
+
+    if not nuevos:
         print("No se extrajo ningún dato.")
+        return
+
+    with open(ARCHIVO, "w", encoding="utf-8") as f:
+        json.dump(nuevos, f, indent=4, ensure_ascii=False)
+    print(f"\nGuardado {ARCHIVO}. Total: {len(nuevos)}")
+
+    if not anteriores:
+        print("Primera ejecución: se guardó la base. No hay cambios que notificar.")
+        return
+
+    cambios = comparar(anteriores, nuevos)
+    if not cambios:
+        print("Sin cambios.")
+        return
+
+    print(f"Cambios detectados: {len(cambios)}")
+    enviar_discord(cambios)
 
 
 if __name__ == "__main__":
