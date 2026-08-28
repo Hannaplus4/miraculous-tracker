@@ -1,6 +1,7 @@
 import requests
 import json
-from m3u8 import parse as m3u8parser
+import re
+from urllib.parse import urlparse, urlunparse
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -17,66 +18,108 @@ PARAMS = {
     "utsk": "6e3013c6d6fae3c2:::::235656c069bb0efb",
 }
 
-def ReplaceCodeLanguages(x: str) -> str:
-    x = x.lower().replace("_subtitle_dialog_0", "").replace("_dialog_0", "")
-    return (
-        x.replace("es-mx", "es-la")
-         .replace("es-419", "es-la")
-         .replace("es-us", "es-la")
-         .replace("_", "-")
-    )
+# Storefront con más idiomas disponibles (IE)
+STOREFRONT = "ie"
 
-def obtener_idiomas_de_m3u8(m3u8_url: str):
+
+def limpiar_idioma(texto: str) -> str:
+    """Quita codecs/formatos y normaliza el nombre del idioma."""
+    texto = texto.strip()
+    # Quitar cosas entre paréntesis: (Dolby 5.1), (AAC), (CC), (Always On), (AD), etc.
+    texto = re.sub(r"\s*\([^)]*\)", "", texto)
+    # Limpiar caracteres raros de Apple
+    texto = texto.replace("\u2068", "").replace("\u2069", "").replace("\xa0", " ")
+    texto = texto.strip()
+    # Normalizaciones comunes
+    lower = texto.lower()
+    if "latin america" in lower or "latino" in lower:
+        return "es-la"
+    if texto.lower().startswith("spanish (spain)") or texto == "Spanish (Spain)":
+        return "es-es"
+    if "portuguese (portugal)" in lower:
+        return "pt-pt"
+    if "portuguese (brazil)" in lower or "brazilian" in lower:
+        return "pt-br"
+    if "french (france)" in lower:
+        return "fr-fr"
+    if "french (canada)" in lower:
+        return "fr-ca"
+    if "english (united kingdom)" in lower or "english (uk)" in lower:
+        return "en-gb"
+    if "english (united states)" in lower or "english (us)" in lower:
+        return "en-us"
+    return texto
+
+
+def parsear_lista_idiomas(info: str):
+    """Convierte 'English (Dolby 5.1), French (France) (Dolby 5.1), ...' en lista limpia."""
+    if not info:
+        return []
+    partes = [p.strip() for p in info.split(",") if p.strip()]
+    resultados = []
+    for p in partes:
+        limpio = limpiar_idioma(p)
+        if limpio:
+            resultados.append(limpio)
+    # Quitar duplicados manteniendo orden
+    vistos = set()
+    unicos = []
+    for x in resultados:
+        key = x.lower()
+        if key not in vistos:
+            vistos.add(key)
+            unicos.append(x)
+    return unicos
+
+
+def obtener_idiomas_pagina(episode_url: str):
+    """
+    Lee la página del episodio y extrae Audio + Subtitles
+    (ignora Original Audio).
+    """
+    # Forzar storefront con más tracks
+    parsed = urlparse(episode_url)
+    path_parts = parsed.path.split("/")
+    # /us/episode/... -> /ie/episode/...
+    if len(path_parts) > 1:
+        path_parts[1] = STOREFRONT
+    new_url = urlunparse(parsed._replace(path="/".join(path_parts), query=""))
+
     try:
-        res = requests.get(m3u8_url, headers=HEADERS, timeout=15)
+        res = requests.get(new_url, headers=HEADERS, timeout=15)
         if res.status_code != 200:
             return [], []
 
-        master = m3u8parser(res.text)
-        audios, subtitulos = set(), set()
+        m = re.search(
+            r'<script[^>]*id="serialized-server-data"[^>]*>(.*?)</script>',
+            res.text,
+            re.DOTALL,
+        )
+        if not m:
+            return [], []
 
-        for media in master.get("media", []):
-            lang = media.get("language")
-            if not lang:
-                continue
+        data = json.loads(m.group(1))
+        shelves = data.get("data", [{}])[1].get("data", {}).get("shelves", [])
 
-            lang_clean = ReplaceCodeLanguages(lang)
+        audios, subs = [], []
 
-            if media["type"] == "AUDIO":
-                audios.add(lang_clean)
-            elif media["type"] == "SUBTITLES":
-                forced = media.get("forced") == "YES"
-                tag = f"{lang_clean}-forced" if forced else lang_clean
-                subtitulos.add(tag)
+        for shelf in shelves:
+            for item in shelf.get("items", []):
+                if item.get("id") != "languages":
+                    continue
+                for lang_item in item.get("items", []):
+                    lid = lang_item.get("id", "")
+                    info = lang_item.get("info", "")
+                    if lid == "languages-audio":
+                        audios = parsear_lista_idiomas(info)
+                    elif lid == "languages-subtitles":
+                        subs = parsear_lista_idiomas(info)
 
-        return sorted(audios), sorted(subtitulos)
+        return audios, subs
     except Exception as e:
-        print(f"Error parseando M3U8: {e}")
+        print(f"  Error página: {e}")
         return [], []
 
-def obtener_hls_url(episode_id: str):
-    url = f"https://tv.apple.com/api/uts/v2/view/product/{episode_id}/personalized"
-    try:
-        res = requests.get(url, params=PARAMS, headers=HEADERS, timeout=12)
-        if res.status_code != 200:
-            return None
-
-        data = res.json()
-        playables = data.get("data", {}).get("content", {}).get("playables", [])
-
-        for p in playables:
-            assets = p.get("assets") or {}
-            if "hlsUrl" in assets:
-                return assets["hlsUrl"]
-
-            itunes = p.get("itunesMediaApiData") or {}
-            for offer in itunes.get("offers", []):
-                if "hlsUrl" in offer:
-                    return offer["hlsUrl"]
-
-        return None
-    except Exception:
-        return None
 
 def escanear_episodios():
     base_url = "https://tv.apple.com/api/uts/v3/shows/umc.cmc.7adu8wmjugygtdhfamor58yn8/episodes"
@@ -112,16 +155,15 @@ def escanear_episodios():
         for ep in episodes_list:
             season_num = ep.get("seasonNumber")
             ep_num = ep.get("episodeNumber")
-            ep_id = ep.get("id")
             title = ep.get("title")
+            ep_url = ep.get("url")
 
-            if season_num is None or ep_num is None or not ep_id:
+            if season_num is None or ep_num is None or not ep_url:
                 continue
 
             ep_key = f"S{season_num:02d}E{ep_num:02d}"
 
-            hls_url = obtener_hls_url(ep_id)
-            audios, subs = obtener_idiomas_de_m3u8(hls_url) if hls_url else ([], [])
+            audios, subs = obtener_idiomas_pagina(ep_url)
 
             episodios_info[ep_key] = {
                 "titulo": title,
@@ -138,8 +180,9 @@ def escanear_episodios():
 
     return episodios_info
 
+
 def main():
-    print("Iniciando escaneo...")
+    print("Iniciando escaneo (idiomas desde página del episodio)...")
     datos = escanear_episodios()
 
     if datos:
@@ -148,6 +191,7 @@ def main():
         print(f"\nListo. Total episodios: {len(datos)}")
     else:
         print("No se extrajo ningún dato.")
+
 
 if __name__ == "__main__":
     main()
