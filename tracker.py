@@ -20,10 +20,79 @@ PARAMS = {
     "utsk": "6e3013c6d6fae3c2:::::235656c069bb0efb",
 }
 
-SHOW_ID = "umc.cmc.7adu8wmjugygtdhfamor58yn8"
-STOREFRONT = "ie"  # preferido (más idiomas); si falla prueba us/gb
+STOREFRONT = "ie"
 ARCHIVO = "datos.json"
 DISCORD_WEBHOOK = os.environ.get("DISCORD_WEBHOOK", "")
+
+# Serie principal (episodios por temporada)
+SHOWS = [
+    {
+        "id": "umc.cmc.7adu8wmjugygtdhfamor58yn8",
+        "nombre": "Miraculous (principal)",
+        "prefijo": "",  # claves S01E01...
+    },
+    {
+        "id": "umc.cmc.20bez3zpes3ba8r6yx4vql1nq",
+        "nombre": "Miraculous Tales (alt)",
+        "prefijo": "ALT-",
+    },
+    {
+        "id": "umc.cmc.2v872y53a5ih34r497wektrhf",
+        "nombre": "Miraculous Chibi",
+        "prefijo": "CHIBI-",
+    },
+    {
+        "id": "umc.cmc.5213w503392e9lxqlnken1ab1",
+        "nombre": "Chibi Shorts",
+        "prefijo": "SHORTS-",
+    },
+]
+
+# Películas / especiales (una ficha cada una)
+MOVIES = [
+    {
+        "id": "umc.cmc.njf03z6p926unx34eupch0td",
+        "clave": "MOVIE-NY",
+        "titulo": "Miraculous World: New York – United HeroeZ",
+        "url": "https://tv.apple.com/ie/movie/miraculous-world-new-york-united-heroez/umc.cmc.njf03z6p926unx34eupch0td",
+    },
+    {
+        "id": "umc.cmc.1pud6xbnxk00fpg1dnkpl2qot",
+        "clave": "MOVIE-SHANGHAI",
+        "titulo": "Miraculous World: Shanghai – The Legend of Ladydragon",
+        "url": "https://tv.apple.com/ie/movie/miraculous-world-shanghai-the-legend-of-ladydragon/umc.cmc.1pud6xbnxk00fpg1dnkpl2qot",
+    },
+    {
+        "id": "umc.cmc.6xwtcgi6c7tddo6ds9znhzi8",
+        "clave": "MOVIE-PARIS",
+        "titulo": "Miraculous World: Paris – Tales of Shadybug and Claw Noir",
+        "url": "https://tv.apple.com/ie/movie/miraculous-world-paris-tales-of-shadybug-and-claw-noir/umc.cmc.6xwtcgi6c7tddo6ds9znhzi8",
+    },
+    {
+        "id": "umc.cmc.1bje05arrzrmujs323a6z458i",
+        "clave": "MOVIE-LONDON",
+        "titulo": "Miraculous World: London – At the Edge of Time",
+        "url": "https://tv.apple.com/ie/movie/miraculous-world-london-at-the-edge-of-time/umc.cmc.1bje05arrzrmujs323a6z458i",
+    },
+    {
+        "id": "umc.cmc.16v2i10hid0ja28njxpkzaqmh",
+        "clave": "MOVIE-TOKYO",
+        "titulo": "Miraculous World: Tokyo – Stellar Force",
+        "url": "https://tv.apple.com/ie/movie/miraculous-world-tokyo-stellar-force/umc.cmc.16v2i10hid0ja28njxpkzaqmh",
+    },
+]
+
+# Overrides cuando el API da un ID malo
+URL_OVERRIDES = {
+    "vampigami": (
+        "https://tv.apple.com/ie/episode/vampigami/"
+        "umc.cmc.5gkqyetzv0lui4nnjl568web2"
+    ),
+    "the-chained-titans": (
+        "https://tv.apple.com/ie/episode/the-chained-titans/"
+        "umc.cmc.4gaalf5893r6slp2hh14xy22a"
+    ),
+}
 
 
 def limpiar_idioma(texto: str) -> str:
@@ -45,7 +114,6 @@ def limpiar_idioma(texto: str) -> str:
 
     es_ad = bool(re.search(r"\(\s*AD\b", texto, re.IGNORECASE))
 
-    # Quitar todo entre paréntesis: (AD, Dolby 5.1), (AAC), (Always On), etc.
     texto = re.sub(r"\s*\([^)]*\)", "", texto)
     texto = texto.strip(" ,.-")
     texto = re.sub(r"\s+", " ", texto).strip()
@@ -83,7 +151,6 @@ def limpiar_idioma(texto: str) -> str:
 
 
 def parsear_lista_idiomas(info: str) -> list:
-    """Parte por comas solo fuera de paréntesis."""
     if not info:
         return []
 
@@ -143,7 +210,12 @@ def _extraer_idiomas_de_html(html: str):
         return [], []
 
     data = json.loads(m.group(1))
-    shelves = data.get("data", [{}])[1].get("data", {}).get("shelves", [])
+    items_data = data.get("data", [])
+    if len(items_data) < 2:
+        return [], []
+
+    page = items_data[1].get("data", {})
+    shelves = page.get("shelves", [])
 
     audios, subs = [], []
     for shelf in shelves:
@@ -160,16 +232,12 @@ def _extraer_idiomas_de_html(html: str):
     return audios, subs
 
 
-def obtener_idiomas_pagina(episode_url: str):
-    """
-    Prueba varios storefronts: ie (más idiomas) -> us -> gb -> URL original.
-    Así episodios que dan 404 en IE (ej. Vampigami) no quedan vacíos.
-    """
-    parsed = urlparse(episode_url)
+def obtener_idiomas_pagina(page_url: str):
+    parsed = urlparse(page_url)
     path_parts = list(parsed.path.split("/"))
 
     candidatos = []
-    for sf in (STOREFRONT, "us", "gb"):
+    for sf in (STOREFRONT, "us", "gb", "ie"):
         parts = path_parts[:]
         if len(parts) > 1:
             parts[1] = sf
@@ -195,11 +263,9 @@ def obtener_idiomas_pagina(episode_url: str):
             if not audios and not subs:
                 continue
 
-            # Preferir la respuesta con más pistas (suele ser IE)
             if len(audios) + len(subs) > len(mejor_audios) + len(mejor_subs):
                 mejor_audios, mejor_subs = audios, subs
 
-            # Si ya tenemos una lista rica, no hace falta seguir
             if len(audios) >= 3 or len(subs) >= 3:
                 return audios, subs
         except Exception as e:
@@ -209,25 +275,52 @@ def obtener_idiomas_pagina(episode_url: str):
     return mejor_audios, mejor_subs
 
 
-def obtener_temporadas():
-    url = f"https://tv.apple.com/api/uts/v3/shows/{SHOW_ID}/episodes"
+def urls_para_episodio(title: str, urls: list) -> list:
+    slug = re.sub(r"[^a-z0-9]+", "-", (title or "").lower()).strip("-")
+    out = []
+    if slug in URL_OVERRIDES:
+        out.append(URL_OVERRIDES[slug])
+    for u in urls or []:
+        if u and u not in out:
+            out.append(u)
+    return out
+
+
+def idiomas_mejor_url(urls: list):
+    mejor_a, mejor_s = [], []
+    for u in urls:
+        a, s = obtener_idiomas_pagina(u)
+        if len(a) + len(s) > len(mejor_a) + len(mejor_s):
+            mejor_a, mejor_s = a, s
+        if len(a) >= 5:
+            return a, s
+    return mejor_a, mejor_s
+
+
+def obtener_temporadas(show_id: str):
+    url = f"https://tv.apple.com/api/uts/v3/shows/{show_id}/episodes"
     params = PARAMS.copy()
     params["includeSeasonSummary"] = "true"
     params["selectedSeasonEpisodesOnly"] = "false"
 
     res = requests.get(url, params=params, headers=HEADERS, timeout=15)
-    res.raise_for_status()
+    if res.status_code != 200:
+        print(f"  No se pudieron listar temporadas ({res.status_code})")
+        return []
+
     summaries = res.json().get("data", {}).get("seasonSummaries", [])
     return sorted(summaries, key=lambda s: s.get("seasonNumber", 0))
 
 
-def obtener_episodios_temporada(season_id: str, episode_count: int):
-    url = f"https://tv.apple.com/api/uts/v3/shows/{SHOW_ID}/episodes"
-    vistos = {}
+def obtener_episodios_temporada(show_id: str, season_id: str, episode_count: int):
+    url = f"https://tv.apple.com/api/uts/v3/shows/{show_id}/episodes"
+    por_numero = {}
+    por_titulo = {}
     selected_episode_id = None
     sin_progreso = 0
+    vistos_ids = set()
 
-    while len(vistos) < episode_count and sin_progreso < 5:
+    while len(por_numero) < episode_count and sin_progreso < 8:
         params = PARAMS.copy()
         params["selectedSeasonEpisodesOnly"] = "true"
         params["selectedSeasonId"] = season_id
@@ -242,17 +335,41 @@ def obtener_episodios_temporada(season_id: str, episode_count: int):
         if not batch:
             break
 
-        antes = len(vistos)
+        antes = len(vistos_ids)
         for ep in batch:
-            ep_num = ep.get("episodeNumber")
-            # Ignorar números raros (ej. 107) fuera del rango de la temporada
-            if ep_num is None:
+            eid = ep.get("id")
+            if not eid or eid in vistos_ids:
                 continue
-            if episode_count and (ep_num < 1 or ep_num > episode_count + 5):
-                continue
-            vistos[ep_num] = ep
+            vistos_ids.add(eid)
 
-        if len(vistos) == antes:
+            ep_num = ep.get("episodeNumber")
+            title = ep.get("title") or ""
+            ep_url = ep.get("url")
+            if not ep_url:
+                continue
+
+            key_t = title.strip().lower()
+            por_titulo.setdefault(key_t, []).append(ep)
+
+            if ep_num is None or ep_num < 1:
+                continue
+            if episode_count and ep_num > episode_count + 2:
+                continue
+
+            if ep_num not in por_numero:
+                por_numero[ep_num] = {
+                    "episodeNumber": ep_num,
+                    "title": title,
+                    "urls": [ep_url],
+                    "ids": [eid],
+                }
+            else:
+                if ep_url not in por_numero[ep_num]["urls"]:
+                    por_numero[ep_num]["urls"].append(ep_url)
+                if eid not in por_numero[ep_num]["ids"]:
+                    por_numero[ep_num]["ids"].append(eid)
+
+        if len(vistos_ids) == antes:
             sin_progreso += 1
         else:
             sin_progreso = 0
@@ -261,48 +378,105 @@ def obtener_episodios_temporada(season_id: str, episode_count: int):
         if not selected_episode_id:
             break
 
-    return [vistos[k] for k in sorted(vistos.keys())]
+    for ep_num, data in por_numero.items():
+        key_t = data["title"].strip().lower()
+        for alt in por_titulo.get(key_t, []):
+            alt_url = alt.get("url")
+            alt_id = alt.get("id")
+            if alt_url and alt_url not in data["urls"]:
+                data["urls"].append(alt_url)
+            if alt_id and alt_id not in data["ids"]:
+                data["ids"].append(alt_id)
+
+    return [por_numero[k] for k in sorted(por_numero.keys())]
 
 
-def escanear_episodios():
-    temporadas = obtener_temporadas()
-    print(f"Temporadas encontradas: {len(temporadas)}")
+def escanear_show(show: dict) -> dict:
+    show_id = show["id"]
+    prefijo = show.get("prefijo", "")
+    nombre = show.get("nombre", show_id)
+
+    print(f"\n######## SHOW: {nombre} ({show_id}) ########")
+    temporadas = obtener_temporadas(show_id)
+    if not temporadas:
+        print("  Sin temporadas (¿es un show sin episodios listables?).")
+        return {}
+
+    print(f"  Temporadas: {len(temporadas)}")
     for t in temporadas:
         print(
-            f"  S{t.get('seasonNumber'):02d} - {t.get('title')} "
+            f"    S{t.get('seasonNumber'):02d} - {t.get('title')} "
             f"({t.get('episodeCount')} eps)"
         )
 
-    episodios_info = {}
+    info = {}
 
     for t in temporadas:
         season_num = t.get("seasonNumber")
         season_id = t.get("id")
         expected = t.get("episodeCount") or 30
 
-        print(f"\n=== Temporada {season_num} (esperados ~{expected}) ===")
-        episodios = obtener_episodios_temporada(season_id, expected)
-        print(f"  Obtenidos: {len(episodios)}")
+        print(f"\n  === Temporada {season_num} (esperados ~{expected}) ===")
+        episodios = obtener_episodios_temporada(show_id, season_id, expected)
+        print(f"    Obtenidos: {len(episodios)}")
 
         for ep in episodios:
             ep_num = ep.get("episodeNumber")
             title = ep.get("title")
-            ep_url = ep.get("url")
+            urls = urls_para_episodio(title, ep.get("urls") or [])
 
-            if ep_num is None or not ep_url:
+            if ep_num is None or not urls:
                 continue
 
-            ep_key = f"S{season_num:02d}E{ep_num:02d}"
-            audios, subs = obtener_idiomas_pagina(ep_url)
+            ep_key = f"{prefijo}S{season_num:02d}E{ep_num:02d}"
+            audios, subs = idiomas_mejor_url(urls)
 
-            episodios_info[ep_key] = {
+            info[ep_key] = {
                 "titulo": title,
+                "tipo": "episodio",
+                "show": nombre,
                 "audios": audios,
                 "subtitulos": subs,
             }
-            print(f"  {ep_key} - {title} | Audios: {len(audios)} | Subs: {len(subs)}")
+            print(
+                f"    {ep_key} - {title} | Audios: {len(audios)} | "
+                f"Subs: {len(subs)} | fichas: {len(urls)}"
+            )
 
-    return episodios_info
+    return info
+
+
+def escanear_peliculas() -> dict:
+    print("\n######## PELÍCULAS / ESPECIALES ########")
+    info = {}
+
+    for movie in MOVIES:
+        clave = movie["clave"]
+        titulo = movie["titulo"]
+        url = movie["url"]
+
+        audios, subs = obtener_idiomas_pagina(url)
+        info[clave] = {
+            "titulo": titulo,
+            "tipo": "pelicula",
+            "audios": audios,
+            "subtitulos": subs,
+        }
+        print(
+            f"  {clave} - {titulo} | Audios: {len(audios)} | Subs: {len(subs)}"
+        )
+
+    return info
+
+
+def escanear_todo() -> dict:
+    todo = {}
+
+    for show in SHOWS:
+        todo.update(escanear_show(show))
+
+    todo.update(escanear_peliculas())
+    return todo
 
 
 def cargar_anteriores():
@@ -394,9 +568,9 @@ def enviar_discord(cambios: list):
 
 
 def main():
-    print("Iniciando escaneo...")
+    print("Iniciando escaneo completo...")
     anteriores = cargar_anteriores()
-    nuevos = escanear_episodios()
+    nuevos = escanear_todo()
 
     if not nuevos:
         print("No se extrajo ningún dato.")
@@ -404,7 +578,7 @@ def main():
 
     with open(ARCHIVO, "w", encoding="utf-8") as f:
         json.dump(nuevos, f, indent=4, ensure_ascii=False)
-    print(f"\nGuardado {ARCHIVO}. Total: {len(nuevos)}")
+    print(f"\nGuardado {ARCHIVO}. Total entradas: {len(nuevos)}")
 
     if not anteriores:
         print("Primera ejecución: se guardó la base. No hay cambios que notificar.")
