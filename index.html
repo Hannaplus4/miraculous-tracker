@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracker de Idiomas - Miraculous</title>
+    <style>
+        body { font-family: system-ui, sans-serif; background: #f8f9fa; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-top: 4px solid #e50914; }
+        .badge { display: inline-block; padding: 4px 8px; margin: 3px; border-radius: 12px; font-size: 0.85em; font-weight: bold; }
+        .audio { background: #d4edda; color: #155724; }
+        .sub { background: #cce5ff; color: #004085; }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Miraculous: Base de datos de pistas</h1>
+    <div id="app" class="grid"></div>
+    <script>
+        fetch('datos.json').then(r => r.json()).then(data => {
+            const app = document.getElementById('app');
+            Object.entries(data).sort((a, b) => a[0].localeCompare(b[0])).forEach(([ep, info]) => {
+                const aHTML = info.audios.map(a => `<span class="badge audio">${a}</span>`).join('');
+                const sHTML = info.subtitulos.map(s => `<span class="badge sub">${s}</span>`).join('');
+                app.innerHTML += `<div class="card"><h3>${ep} - ${info.titulo}</h3><p><strong>🎙️ Audios:</strong><br>${aHTML || 'N/A'}</p><p><strong>💬 Subs:</strong><br>${sHTML || 'N/A'}</p></div>`;
+            });
+        });
+    </script>
+</body>
+</html>
