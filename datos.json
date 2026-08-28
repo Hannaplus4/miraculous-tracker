@@ -1,32 +1,85 @@
 {
     "S01E01": {
         "titulo": "Stormy Weather",
-        "audios": [],
-        "subtitulos": []
+        "audios": [
+            "cy",
+            "en",
+            "en-gb",
+            "fr",
+            "fr-ca",
+            "fr-fr",
+            "ko"
+        ],
+        "subtitulos": [],
+        "hls_url": null
     },
     "S01E02": {
         "titulo": "The Bubbler",
-        "audios": [],
-        "subtitulos": []
+        "audios": [
+            "cy",
+            "en",
+            "en-gb",
+            "fr",
+            "fr-ca",
+            "fr-fr",
+            "ko"
+        ],
+        "subtitulos": [],
+        "hls_url": null
     },
     "S01E03": {
         "titulo": "The Pharaoh",
-        "audios": [],
-        "subtitulos": []
+        "audios": [
+            "cy",
+            "en",
+            "en-gb",
+            "fr",
+            "fr-ca",
+            "fr-fr",
+            "ko"
+        ],
+        "subtitulos": [],
+        "hls_url": null
     },
     "S01E04": {
         "titulo": "Lady Wifi",
-        "audios": [],
-        "subtitulos": []
+        "audios": [
+            "cy",
+            "en",
+            "en-gb",
+            "fr",
+            "fr-ca",
+            "fr-fr",
+            "ko"
+        ],
+        "subtitulos": [],
+        "hls_url": null
     },
     "S01E05": {
         "titulo": "Timebreaker",
-        "audios": [],
-        "subtitulos": []
+        "audios": [
+            "en",
+            "en-gb",
+            "fr",
+            "fr-ca",
+            "fr-fr",
+            "ko"
+        ],
+        "subtitulos": [],
+        "hls_url": null
     },
     "S01E06": {
         "titulo": "Mr. Pigeon",
-        "audios": [],
-        "subtitulos": []
+        "audios": [
+            "cy",
+            "en",
+            "en-gb",
+            "fr",
+            "fr-ca",
+            "fr-fr",
+            "ko"
+        ],
+        "subtitulos": [],
+        "hls_url": null
     }
 }
