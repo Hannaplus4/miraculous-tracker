@@ -7,7 +7,6 @@ HEADERS = {
     "Referer": "https://tv.apple.com/"
 }
 
-# Parámetros por defecto que usaba tu script original para las consultas de producto/episodio
 PARAMS = {
     "caller": "web",
     "locale": "en-US",
@@ -44,21 +43,21 @@ def obtener_idiomas_de_m3u8(m3u8_url):
         return [], []
 
 def obtener_hls_episodio(episode_id):
-    """Consulta el endpoint individual del episodio para obtener su manifiesto HLS real"""
-    product_url = f"https://tv.apple.com/api/uts/v3/product?id={episode_id}"
+    """Usa el endpoint de contenido exacto del script original de Apple TV"""
+    content_url = f"https://tv.apple.com/api/uts/v3/channel/content?id={episode_id}"
     try:
-        res = requests.get(product_url, params=PARAMS, headers=HEADERS, timeout=10)
+        res = requests.get(content_url, params=PARAMS, headers=HEADERS, timeout=10)
         if res.status_code != 200:
+            # Intentar ruta alternativa de producto si la del canal varía
             return None
         
         data = res.json()
-        # Navegar por la estructura de playables del producto
-        content = data.get('data', {}).get('content', {})
-        playables = content.get('playables', [])
+        resp_content = data.get('data', {}).get('content', {})
+        playables = resp_content.get('playables', [])
         
-        for p in playables:
-            if 'assets' in p and 'hlsUrl' in p['assets']:
-                return p['assets']['hlsUrl']
+        for x in playables:
+            if 'assets' in x and 'hlsUrl' in x['assets']:
+                return x['assets']['hlsUrl']
     except Exception as e:
         print(f"Error obteniendo HLS para ID {episode_id}: {e}")
     return None
@@ -108,7 +107,6 @@ def escanear_episodios():
                     
                 ep_key = f"S{season_num:02d}E{ep_num:02d}"
                 
-                # Buscamos el HLS usando el ID específico del episodio
                 hls_url = obtener_hls_episodio(ep_id)
                 audios, subs = obtener_idiomas_de_m3u8(hls_url) if hls_url else ([], [])
                 
