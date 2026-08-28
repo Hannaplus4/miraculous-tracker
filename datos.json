@@ -1,6 +1,8 @@
 {
     "S01E01": {
-        "titulo": "Santa Claws",
+        "titulo": "Stormy Weather",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -33,17 +35,16 @@
             "Cantonese",
             "Chinese",
             "Traditional",
-            "Czech",
             "Finnish",
             "Greek",
             "Hungarian",
-            "Italian",
-            "Polish",
-            "Turkish"
+            "Polish"
         ]
     },
     "S01E02": {
-        "titulo": "The Collector",
+        "titulo": "The Bubbler",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -76,18 +77,17 @@
             "Cantonese",
             "Chinese",
             "Traditional",
-            "Czech",
             "Finnish",
             "German",
             "Greek",
             "Hungarian",
-            "Italian",
-            "Polish",
-            "Turkish"
+            "Polish"
         ]
     },
     "S01E03": {
-        "titulo": "Despair Bear",
+        "titulo": "The Pharaoh",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -120,18 +120,17 @@
             "Cantonese",
             "Chinese",
             "Traditional",
-            "Czech",
             "Finnish",
             "German",
             "Greek",
             "Hungarian",
-            "Italian",
-            "Polish",
-            "Turkish"
+            "Polish"
         ]
     },
     "S01E04": {
         "titulo": "Lady Wifi",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -171,6 +170,8 @@
     },
     "S01E05": {
         "titulo": "Timebreaker",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -211,6 +212,8 @@
     },
     "S01E06": {
         "titulo": "Mr. Pigeon",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -252,6 +255,8 @@
     },
     "S01E07": {
         "titulo": "The Evillustrator",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -293,6 +298,8 @@
     },
     "S01E08": {
         "titulo": "Rogercop",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -332,6 +339,8 @@
     },
     "S01E09": {
         "titulo": "Copycat",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -373,6 +382,8 @@
     },
     "S01E10": {
         "titulo": "Dark Cupid",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -414,6 +425,8 @@
     },
     "S01E11": {
         "titulo": "Horrificator",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -454,6 +467,8 @@
     },
     "S01E12": {
         "titulo": "Darkblade",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -494,6 +509,8 @@
     },
     "S01E13": {
         "titulo": "The Mime",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -535,6 +552,8 @@
     },
     "S01E14": {
         "titulo": "Kung Food",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -574,6 +593,8 @@
     },
     "S01E15": {
         "titulo": "Gamer",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -615,6 +636,8 @@
     },
     "S01E16": {
         "titulo": "Animan",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -654,6 +677,8 @@
     },
     "S01E17": {
         "titulo": "Antibug",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -694,6 +719,8 @@
     },
     "S01E18": {
         "titulo": "The Puppeteer",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -735,6 +762,8 @@
     },
     "S01E19": {
         "titulo": "Reflekta",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -774,6 +803,8 @@
     },
     "S01E20": {
         "titulo": "Guitar Villain",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -815,6 +846,8 @@
     },
     "S01E21": {
         "titulo": "Pixelator",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -856,6 +889,8 @@
     },
     "S01E22": {
         "titulo": "Princess Fragrance",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -897,6 +932,8 @@
     },
     "S01E23": {
         "titulo": "Simon Says",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -938,6 +975,8 @@
     },
     "S01E24": {
         "titulo": "Volpina",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -977,6 +1016,8 @@
     },
     "S01E25": {
         "titulo": "Ladybug & Cat Noir (Origins, Part 1)",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1018,6 +1059,8 @@
     },
     "S01E26": {
         "titulo": "Stoneheart (Origins, Part 2)",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1058,7 +1101,9 @@
         ]
     },
     "S02E01": {
-        "titulo": "Backwarder",
+        "titulo": "Santa Claws",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1086,25 +1131,27 @@
             "Turkish"
         ],
         "subtitulos": [
+            "French",
             "Arabic",
             "Cantonese",
             "Chinese",
             "Traditional",
             "Czech",
-            "Dutch",
-            "German",
+            "Finnish",
             "Greek",
             "Hungarian",
+            "Italian",
             "Polish",
             "Turkish"
         ]
     },
     "S02E02": {
-        "titulo": "Weredad",
+        "titulo": "The Collector",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
-            "Korean",
             "Arabic",
             "Cantonese",
             "Czech",
@@ -1129,22 +1176,25 @@
             "Turkish"
         ],
         "subtitulos": [
+            "French",
             "Arabic",
             "Cantonese",
             "Chinese",
             "Traditional",
             "Czech",
-            "Dutch",
             "Finnish",
             "German",
             "Greek",
             "Hungarian",
+            "Italian",
             "Polish",
             "Turkish"
         ]
     },
     "S02E03": {
-        "titulo": "Chameleon",
+        "titulo": "Despair Bear",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1172,21 +1222,25 @@
             "Turkish"
         ],
         "subtitulos": [
+            "French",
             "Arabic",
             "Cantonese",
             "Chinese",
             "Traditional",
             "Czech",
-            "Dutch",
+            "Finnish",
             "German",
             "Greek",
             "Hungarian",
+            "Italian",
             "Polish",
             "Turkish"
         ]
     },
     "S02E04": {
         "titulo": "Prime Queen",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1230,6 +1284,8 @@
     },
     "S02E05": {
         "titulo": "The Befana",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1273,6 +1329,8 @@
     },
     "S02E06": {
         "titulo": "Riposte",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1315,6 +1373,8 @@
     },
     "S02E07": {
         "titulo": "Robostus",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1356,6 +1416,8 @@
     },
     "S02E08": {
         "titulo": "Gigantitan",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1399,6 +1461,8 @@
     },
     "S02E09": {
         "titulo": "The Dark Owl",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1443,6 +1507,8 @@
     },
     "S02E10": {
         "titulo": "Glaciator",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1486,6 +1552,8 @@
     },
     "S02E11": {
         "titulo": "Sapotis",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1529,6 +1597,8 @@
     },
     "S02E12": {
         "titulo": "Gorizilla",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1571,6 +1641,8 @@
     },
     "S02E13": {
         "titulo": "Captain Hardrock",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1614,6 +1686,8 @@
     },
     "S02E14": {
         "titulo": "Zombizou",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1656,6 +1730,8 @@
     },
     "S02E15": {
         "titulo": "Syren",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1699,6 +1775,8 @@
     },
     "S02E16": {
         "titulo": "Frightingale",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1742,6 +1820,8 @@
     },
     "S02E17": {
         "titulo": "Troublemaker",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1785,6 +1865,8 @@
     },
     "S02E18": {
         "titulo": "Anansi",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1828,6 +1910,8 @@
     },
     "S02E19": {
         "titulo": "Sandboy",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1871,6 +1955,8 @@
     },
     "S02E20": {
         "titulo": "Reverser",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1914,6 +2000,8 @@
     },
     "S02E21": {
         "titulo": "Frozer",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -1956,6 +2044,8 @@
     },
     "S02E22": {
         "titulo": "Style Queen",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2000,6 +2090,8 @@
     },
     "S02E23": {
         "titulo": "Queen Wasp",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2044,6 +2136,8 @@
     },
     "S02E24": {
         "titulo": "Malediktator",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2087,6 +2181,8 @@
     },
     "S02E25": {
         "titulo": "Catalyst",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2131,6 +2227,8 @@
     },
     "S02E26": {
         "titulo": "Mayura",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2174,11 +2272,14 @@
         ]
     },
     "S03E01": {
-        "titulo": "Truth",
+        "titulo": "Backwarder",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
-            "en-ad",
+            "en",
             "French",
             "Arabic",
+            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
@@ -2202,26 +2303,28 @@
         ],
         "subtitulos": [
             "Arabic",
+            "Cantonese",
             "Chinese",
             "Traditional",
-            "Danish",
-            "Finnish",
+            "Czech",
+            "Dutch",
             "German",
-            "Italian",
-            "Norwegian",
+            "Greek",
+            "Hungarian",
             "Polish",
-            "Romanian",
-            "es",
-            "Swedish",
             "Turkish"
         ]
     },
     "S03E02": {
-        "titulo": "Lies",
+        "titulo": "Weredad",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
-            "en-ad",
+            "en",
             "French",
+            "Korean",
             "Arabic",
+            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
@@ -2245,26 +2348,28 @@
         ],
         "subtitulos": [
             "Arabic",
+            "Cantonese",
             "Chinese",
             "Traditional",
-            "Danish",
+            "Czech",
+            "Dutch",
             "Finnish",
             "German",
-            "Italian",
-            "Norwegian",
+            "Greek",
+            "Hungarian",
             "Polish",
-            "Romanian",
-            "es",
-            "Swedish",
             "Turkish"
         ]
     },
     "S03E03": {
-        "titulo": "Gang of Secrets",
+        "titulo": "Chameleon",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
-            "en-ad",
+            "en",
             "French",
             "Arabic",
+            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
@@ -2288,22 +2393,22 @@
         ],
         "subtitulos": [
             "Arabic",
+            "Cantonese",
             "Chinese",
             "Traditional",
-            "Danish",
-            "Finnish",
+            "Czech",
+            "Dutch",
             "German",
-            "Italian",
-            "Norwegian",
+            "Greek",
+            "Hungarian",
             "Polish",
-            "Romanian",
-            "es",
-            "Swedish",
             "Turkish"
         ]
     },
     "S03E04": {
         "titulo": "Animaestro",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2344,6 +2449,8 @@
     },
     "S03E05": {
         "titulo": "Bakerix",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2386,6 +2493,8 @@
     },
     "S03E06": {
         "titulo": "Silencer",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2429,6 +2538,8 @@
     },
     "S03E07": {
         "titulo": "Oblivio",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2471,6 +2582,8 @@
     },
     "S03E08": {
         "titulo": "Stormy Weather 2",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2512,6 +2625,8 @@
     },
     "S03E09": {
         "titulo": "Reflekdoll",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2554,6 +2669,8 @@
     },
     "S03E10": {
         "titulo": "Onichan",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2595,6 +2712,8 @@
     },
     "S03E11": {
         "titulo": "Miraculer",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2637,6 +2756,8 @@
     },
     "S03E12": {
         "titulo": "The Puppeteer 2",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2678,6 +2799,8 @@
     },
     "S03E13": {
         "titulo": "Desperada",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2719,6 +2842,8 @@
     },
     "S03E14": {
         "titulo": "Startrain",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2761,6 +2886,8 @@
     },
     "S03E15": {
         "titulo": "Kwami Buster",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2804,6 +2931,8 @@
     },
     "S03E16": {
         "titulo": "Feast",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2845,6 +2974,8 @@
     },
     "S03E17": {
         "titulo": "Ikari Gozen",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2886,6 +3017,8 @@
     },
     "S03E18": {
         "titulo": "Timetagger",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2929,6 +3062,8 @@
     },
     "S03E19": {
         "titulo": "Party Crasher",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -2971,6 +3106,8 @@
     },
     "S03E20": {
         "titulo": "Gamer 2.0",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -3012,6 +3149,8 @@
     },
     "S03E21": {
         "titulo": "Cat Blanc",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -3054,6 +3193,8 @@
     },
     "S03E22": {
         "titulo": "Felix",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -3095,6 +3236,8 @@
     },
     "S03E23": {
         "titulo": "Ladybug",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -3136,6 +3279,8 @@
     },
     "S03E24": {
         "titulo": "Chris Master",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -3178,6 +3323,8 @@
     },
     "S03E25": {
         "titulo": "Heart Hunter",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -3219,6 +3366,8 @@
     },
     "S03E26": {
         "titulo": "Miracle Queen",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en",
             "French",
@@ -3259,17 +3408,17 @@
         ]
     },
     "S04E01": {
-        "titulo": "Evolution",
+        "titulo": "Truth",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
-            "Korean",
+            "French",
             "Arabic",
-            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
             "Finnish",
-            "French",
             "German",
             "Greek",
             "Hebrew",
@@ -3278,7 +3427,6 @@
             "Italian",
             "Japanese",
             "Malay",
-            "Mandarin",
             "Norwegian",
             "Polish",
             "Portuguese",
@@ -3289,41 +3437,29 @@
             "Turkish"
         ],
         "subtitulos": [
-            "Korean",
             "Arabic",
-            "Cantonese",
             "Chinese",
-            "Simplified",
             "Traditional",
             "Danish",
-            "Dutch",
             "Finnish",
-            "French",
             "German",
-            "Greek",
-            "Hebrew",
-            "Indonesian",
             "Italian",
-            "Japanese",
-            "Malay",
             "Norwegian",
             "Polish",
-            "Portuguese",
             "Romanian",
             "es",
             "Swedish",
-            "Thai",
             "Turkish"
         ]
     },
     "S04E02": {
-        "titulo": "Multiplication",
+        "titulo": "Lies",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
-            "Korean",
             "Arabic",
-            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
@@ -3336,7 +3472,6 @@
             "Italian",
             "Japanese",
             "Malay",
-            "Mandarin",
             "Norwegian",
             "Polish",
             "Portuguese",
@@ -3347,42 +3482,29 @@
             "Turkish"
         ],
         "subtitulos": [
-            "French",
-            "Korean",
             "Arabic",
-            "Cantonese",
             "Chinese",
-            "Simplified",
             "Traditional",
             "Danish",
-            "Dutch",
             "Finnish",
             "German",
-            "Greek",
-            "Hebrew",
-            "Indonesian",
             "Italian",
-            "Japanese",
-            "Malay",
-            "Mandarin",
             "Norwegian",
             "Polish",
-            "Portuguese",
             "Romanian",
             "es",
             "Swedish",
-            "Thai",
             "Turkish"
         ]
     },
     "S04E03": {
-        "titulo": "Destruction",
+        "titulo": "Gang of Secrets",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
-            "Korean",
             "Arabic",
-            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
@@ -3395,7 +3517,6 @@
             "Italian",
             "Japanese",
             "Malay",
-            "Mandarin",
             "Norwegian",
             "Polish",
             "Portuguese",
@@ -3406,42 +3527,29 @@
             "Turkish"
         ],
         "subtitulos": [
-            "French",
-            "Korean",
             "Arabic",
-            "Cantonese",
             "Chinese",
-            "Simplified",
             "Traditional",
             "Danish",
-            "Dutch",
             "Finnish",
             "German",
-            "Greek",
-            "Hebrew",
-            "Indonesian",
             "Italian",
-            "Japanese",
-            "Malay",
-            "Mandarin",
             "Norwegian",
             "Polish",
-            "Portuguese",
             "Romanian",
             "es",
             "Swedish",
-            "Thai",
             "Turkish"
         ]
     },
     "S04E04": {
-        "titulo": "Jubilation",
+        "titulo": "Mr. Pigeon 72",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
-            "Korean",
             "Arabic",
-            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
@@ -3454,7 +3562,6 @@
             "Italian",
             "Japanese",
             "Malay",
-            "Mandarin",
             "Norwegian",
             "Polish",
             "Portuguese",
@@ -3465,34 +3572,25 @@
             "Turkish"
         ],
         "subtitulos": [
-            "French",
-            "Korean",
             "Arabic",
             "Chinese",
-            "Simplified",
             "Traditional",
             "Danish",
-            "Dutch",
             "Finnish",
             "German",
-            "Greek",
-            "Hebrew",
-            "Indonesian",
             "Italian",
-            "Japanese",
-            "Malay",
             "Norwegian",
             "Polish",
-            "Portuguese",
             "Romanian",
             "es",
             "Swedish",
-            "Thai",
             "Turkish"
         ]
     },
     "S04E05": {
         "titulo": "Furious Fu",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3536,6 +3634,8 @@
     },
     "S04E06": {
         "titulo": "Sole Crusher",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3579,6 +3679,8 @@
     },
     "S04E07": {
         "titulo": "Queen Banana",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3622,6 +3724,8 @@
     },
     "S04E08": {
         "titulo": "Guiltrip",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3665,6 +3769,8 @@
     },
     "S04E09": {
         "titulo": "Optigami",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3708,6 +3814,8 @@
     },
     "S04E10": {
         "titulo": "Sentibubbler",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3751,6 +3859,8 @@
     },
     "S04E11": {
         "titulo": "Rocketear",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3794,6 +3904,8 @@
     },
     "S04E12": {
         "titulo": "Wishmaker",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3837,6 +3949,8 @@
     },
     "S04E13": {
         "titulo": "Mega Leech",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3880,6 +3994,8 @@
     },
     "S04E14": {
         "titulo": "Simpleman",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3923,6 +4039,8 @@
     },
     "S04E15": {
         "titulo": "Dearest family",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -3966,6 +4084,8 @@
     },
     "S04E16": {
         "titulo": "Crocoduel",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4009,6 +4129,8 @@
     },
     "S04E17": {
         "titulo": "Glaciator 2",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4052,6 +4174,8 @@
     },
     "S04E18": {
         "titulo": "Hack-San",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4095,6 +4219,8 @@
     },
     "S04E19": {
         "titulo": "Ephemeral",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Arabic",
@@ -4138,6 +4264,8 @@
     },
     "S04E20": {
         "titulo": "Gabriel Agreste",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4181,6 +4309,8 @@
     },
     "S04E21": {
         "titulo": "Psycomedian",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4224,6 +4354,8 @@
     },
     "S04E22": {
         "titulo": "Kuro Neko",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4267,6 +4399,8 @@
     },
     "S04E23": {
         "titulo": "Penalteam",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4310,6 +4444,8 @@
     },
     "S04E24": {
         "titulo": "Qilin",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4353,6 +4489,8 @@
     },
     "S04E25": {
         "titulo": "Risk",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4395,34 +4533,48 @@
         ]
     },
     "S05E01": {
-        "titulo": "The Illustrhater",
+        "titulo": "Evolution",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
-            "French",
+            "Korean",
+            "Arabic",
+            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
             "Finnish",
+            "French",
             "German",
             "Greek",
             "Hebrew",
             "Hungarian",
+            "Indonesian",
             "Italian",
             "Japanese",
+            "Malay",
+            "Mandarin",
             "Norwegian",
             "Polish",
             "Portuguese",
             "Romanian",
             "es",
-            "Swedish"
+            "Swedish",
+            "Thai",
+            "Turkish"
         ],
         "subtitulos": [
-            "French",
+            "Korean",
+            "Arabic",
+            "Cantonese",
             "Chinese",
+            "Simplified",
             "Traditional",
             "Danish",
             "Dutch",
             "Finnish",
+            "French",
             "German",
             "Greek",
             "Hebrew",
@@ -4431,17 +4583,25 @@
             "Japanese",
             "Malay",
             "Norwegian",
+            "Polish",
             "Portuguese",
+            "Romanian",
             "es",
             "Swedish",
-            "Thai"
+            "Thai",
+            "Turkish"
         ]
     },
     "S05E02": {
-        "titulo": "Sublimation",
+        "titulo": "Multiplication",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
+            "Korean",
+            "Arabic",
+            "Cantonese",
             "Czech",
             "Danish",
             "Dutch",
@@ -4450,37 +4610,53 @@
             "Greek",
             "Hebrew",
             "Hungarian",
+            "Indonesian",
             "Italian",
             "Japanese",
+            "Malay",
+            "Mandarin",
             "Norwegian",
             "Polish",
             "Portuguese",
             "Romanian",
             "es",
-            "Swedish"
+            "Swedish",
+            "Thai",
+            "Turkish"
         ],
         "subtitulos": [
             "French",
+            "Korean",
+            "Arabic",
+            "Cantonese",
             "Chinese",
+            "Simplified",
             "Traditional",
             "Danish",
             "Dutch",
             "Finnish",
+            "German",
             "Greek",
             "Hebrew",
             "Indonesian",
             "Italian",
             "Japanese",
             "Malay",
+            "Mandarin",
             "Norwegian",
+            "Polish",
             "Portuguese",
+            "Romanian",
             "es",
             "Swedish",
-            "Thai"
+            "Thai",
+            "Turkish"
         ]
     },
     "S05E03": {
         "titulo": "Destruction",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4540,6 +4716,8 @@
     },
     "S05E04": {
         "titulo": "Jubilation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4597,6 +4775,8 @@
     },
     "S05E05": {
         "titulo": "Determination",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4656,6 +4836,8 @@
     },
     "S05E06": {
         "titulo": "Passion",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4714,6 +4896,8 @@
     },
     "S05E07": {
         "titulo": "Reunion",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4772,6 +4956,8 @@
     },
     "S05E08": {
         "titulo": "Illusion",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4830,6 +5016,8 @@
     },
     "S05E09": {
         "titulo": "Elation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4888,6 +5076,8 @@
     },
     "S05E10": {
         "titulo": "Transmission",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -4947,6 +5137,8 @@
     },
     "S05E11": {
         "titulo": "Deflagration",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Arabic",
@@ -5000,6 +5192,8 @@
     },
     "S05E12": {
         "titulo": "Perfection",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5058,6 +5252,8 @@
     },
     "S05E13": {
         "titulo": "Migration",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Arabic",
@@ -5111,6 +5307,8 @@
     },
     "S05E14": {
         "titulo": "Derision",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Arabic",
@@ -5164,6 +5362,8 @@
     },
     "S05E15": {
         "titulo": "Intuition",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5217,6 +5417,8 @@
     },
     "S05E16": {
         "titulo": "Protection",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5275,6 +5477,8 @@
     },
     "S05E17": {
         "titulo": "Adoration",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Arabic",
@@ -5328,6 +5532,8 @@
     },
     "S05E18": {
         "titulo": "Emotion",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Arabic",
@@ -5381,6 +5587,8 @@
     },
     "S05E19": {
         "titulo": "Action",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5434,6 +5642,8 @@
     },
     "S05E20": {
         "titulo": "Pretension",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5487,6 +5697,8 @@
     },
     "S05E21": {
         "titulo": "Revelation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Korean",
@@ -5544,6 +5756,8 @@
     },
     "S05E22": {
         "titulo": "Confrontation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5597,6 +5811,8 @@
     },
     "S05E23": {
         "titulo": "Collusion",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5649,6 +5865,8 @@
     },
     "S05E24": {
         "titulo": "Revolution",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5702,6 +5920,8 @@
     },
     "S05E25": {
         "titulo": "Representation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5755,6 +5975,8 @@
     },
     "S05E26": {
         "titulo": "Conformation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5808,6 +6030,8 @@
     },
     "S05E27": {
         "titulo": "Re-creation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5861,6 +6085,8 @@
     },
     "S06E01": {
         "titulo": "The Illustrhater",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5904,6 +6130,8 @@
     },
     "S06E02": {
         "titulo": "Sublimation",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5946,6 +6174,8 @@
     },
     "S06E03": {
         "titulo": "Daddycop",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -5989,6 +6219,8 @@
     },
     "S06E04": {
         "titulo": "Werepapas",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6033,6 +6265,8 @@
     },
     "S06E05": {
         "titulo": "Revelator",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6075,6 +6309,8 @@
     },
     "S06E06": {
         "titulo": "Climatiqueen",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6118,6 +6354,8 @@
     },
     "S06E07": {
         "titulo": "El Toro de Piedra",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6161,6 +6399,8 @@
     },
     "S06E08": {
         "titulo": "The Ruler",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6206,6 +6446,8 @@
     },
     "S06E09": {
         "titulo": "Mister Agreste",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6249,6 +6491,8 @@
     },
     "S06E10": {
         "titulo": "Sleeping Syren",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Czech",
@@ -6288,6 +6532,8 @@
     },
     "S06E11": {
         "titulo": "Wreckless Driver",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6333,6 +6579,8 @@
     },
     "S06E12": {
         "titulo": "The Dark Castle",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6376,6 +6624,8 @@
     },
     "S06E13": {
         "titulo": "Yaksi Gozen",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6416,6 +6666,8 @@
     },
     "S06E14": {
         "titulo": "Noe",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6447,6 +6699,8 @@
     },
     "S06E15": {
         "titulo": "Grendiaper",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6490,13 +6744,51 @@
     },
     "S06E16": {
         "titulo": "Vampigami",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en-ad",
+            "French",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "French",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Greek",
+            "Hebrew",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Norwegian",
+            "Portuguese",
+            "es",
+            "Swedish",
+            "Thai"
+        ]
     },
     "S06E17": {
         "titulo": "A Fairy Good Night",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6538,6 +6830,8 @@
     },
     "S06E18": {
         "titulo": "Heartfixer",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6576,6 +6870,8 @@
     },
     "S06E19": {
         "titulo": "Lady Chaos",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Czech",
@@ -6615,6 +6911,8 @@
     },
     "S06E20": {
         "titulo": "Sadnansi",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "Danish",
@@ -6649,6 +6947,8 @@
     },
     "S06E21": {
         "titulo": "Riginarazione",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6676,13 +6976,35 @@
     },
     "S06E22": {
         "titulo": "The Chained Titans",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en-ad",
+            "French",
+            "Greek",
+            "Hebrew",
+            "Italian",
+            "Portuguese",
+            "es"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "French",
+            "Chinese",
+            "Traditional",
+            "Hebrew",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Portuguese",
+            "es",
+            "Thai"
+        ]
     },
     "S06E23": {
         "titulo": "The Dirtifiers",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6708,6 +7030,8 @@
     },
     "S06E24": {
         "titulo": "Queen of the Dreadzone",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6731,6 +7055,8 @@
     },
     "S06E25": {
         "titulo": "Secret Protocol",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6754,6 +7080,8 @@
     },
     "S06E26": {
         "titulo": "Nemesis",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
         "audios": [
             "en-ad",
             "French",
@@ -6771,6 +7099,1903 @@
             "Portuguese",
             "es",
             "Thai"
+        ]
+    },
+    "ALT-S01E01": {
+        "titulo": "Marinette in Paris",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E02": {
+        "titulo": "Marinette and Fashion",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E03": {
+        "titulo": "Ladybug as seen by Adrien",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E04": {
+        "titulo": "Ladyblog",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Portuguese",
+            "es",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E05": {
+        "titulo": "Adrien's Double Life",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E06": {
+        "titulo": "Marinette and Alya",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E07": {
+        "titulo": "Marinette's Double Life",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E08": {
+        "titulo": "Cat Noir as seen by Marinette",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E09": {
+        "titulo": "My Birthday Party",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S01E10": {
+        "titulo": "Marinette and Adrien",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "Hebrew",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Swedish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "French",
+            "German",
+            "Hungarian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E01": {
+        "titulo": "Master Fu",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E02": {
+        "titulo": "Tikki",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "German",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E03": {
+        "titulo": "Plagg",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "German",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E04": {
+        "titulo": "Friends",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E05": {
+        "titulo": "Max",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E06": {
+        "titulo": "Nino",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "German",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E07": {
+        "titulo": "Mylène",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E08": {
+        "titulo": "Rose",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E09": {
+        "titulo": "Alix",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E10": {
+        "titulo": "Sabrina",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E11": {
+        "titulo": "Ivan",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E12": {
+        "titulo": "Gabriel",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S02E13": {
+        "titulo": "Nathaniel & Marc",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E01": {
+        "titulo": "Marinette as seen by Chloé",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E02": {
+        "titulo": "Lila",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E03": {
+        "titulo": "Hawk Moth and the Akumatized Villains",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E04": {
+        "titulo": "Family",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E05": {
+        "titulo": "Kagami as seen by Marinette",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E06": {
+        "titulo": "Kagami as seen by Adrien",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E07": {
+        "titulo": "Luka as seen by Marinette",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E08": {
+        "titulo": "New Powers",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E09": {
+        "titulo": "New Heroes",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E10": {
+        "titulo": "Mayura and the Sentimonsters",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E11": {
+        "titulo": "Chloé as seen by Marinette",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E12": {
+        "titulo": "Nathalie as seen by Gabriel",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "ALT-S03E13": {
+        "titulo": "Feelings",
+        "tipo": "episodio",
+        "show": "Miraculous Tales (alt)",
+        "audios": [
+            "en",
+            "Arabic",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "French",
+            "German",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Romanian",
+            "es",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E01": {
+        "titulo": "Charmed",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E02": {
+        "titulo": "Careless Whispurr",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E03": {
+        "titulo": "The Eiffel Tower",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E04": {
+        "titulo": "I Love Paris",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E05": {
+        "titulo": "The Ice Cream",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E06": {
+        "titulo": "Collector",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E07": {
+        "titulo": "Picture Perfect",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E08": {
+        "titulo": "The Diary",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E09": {
+        "titulo": "Love is blind",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E10": {
+        "titulo": "The Plant",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S01E11": {
+        "titulo": "Too many emotions",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "es"
+        ]
+    },
+    "CHIBI-S01E12": {
+        "titulo": "The Theater",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "es"
+        ]
+    },
+    "MOVIE-NY": {
+        "titulo": "Miraculous World: New York – United HeroeZ",
+        "tipo": "pelicula",
+        "audios": [
+            "en",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Czech",
+            "Finnish",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Japanese",
+            "Polish",
+            "Romanian",
+            "Turkish"
+        ]
+    },
+    "MOVIE-SHANGHAI": {
+        "titulo": "Miraculous World: Shanghai – The Legend of Ladydragon",
+        "tipo": "pelicula",
+        "audios": [
+            "en",
+            "French",
+            "Arabic",
+            "Cantonese",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "French",
+            "Arabic",
+            "Chinese",
+            "Traditional",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "MOVIE-PARIS": {
+        "titulo": "Miraculous World: Paris – Tales of Shadybug and Claw Noir",
+        "tipo": "pelicula",
+        "audios": [
+            "en",
+            "French",
+            "Arabic",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Indonesian",
+            "Korean",
+            "Malay",
+            "Thai"
+        ]
+    },
+    "MOVIE-LONDON": {
+        "titulo": "Miraculous World: London – At the Edge of Time",
+        "tipo": "pelicula",
+        "audios": [
+            "en",
+            "French",
+            "Arabic",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "French",
+            "Arabic",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Italian",
+            "Korean",
+            "Malay",
+            "Norwegian",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ]
+    },
+    "MOVIE-TOKYO": {
+        "titulo": "Miraculous World: Tokyo – Stellar Force",
+        "tipo": "pelicula",
+        "audios": [
+            "en",
+            "Arabic",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ],
+        "subtitulos": [
+            "Arabic",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "Hebrew",
+            "Indonesian",
+            "Italian",
+            "Korean",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
         ]
     }
 }
