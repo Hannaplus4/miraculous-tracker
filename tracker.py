@@ -1,4 +1,3 @@
-```python
 import requests
 import json
 from m3u8 import parse as m3u8parser
@@ -28,7 +27,6 @@ def ReplaceCodeLanguages(x: str) -> str:
     )
 
 def obtener_idiomas_de_m3u8(m3u8_url: str):
-    """Parsea el master playlist y extrae idiomas de AUDIO y SUBTITLES."""
     try:
         res = requests.get(m3u8_url, headers=HEADERS, timeout=15)
         if res.status_code != 200:
@@ -57,7 +55,6 @@ def obtener_idiomas_de_m3u8(m3u8_url: str):
         return [], []
 
 def obtener_hls_url(episode_id: str):
-    """Obtiene el hlsUrl real usando el endpoint personalized."""
     url = f"https://tv.apple.com/api/uts/v2/view/product/{episode_id}/personalized"
     try:
         res = requests.get(url, params=PARAMS, headers=HEADERS, timeout=12)
@@ -123,7 +120,6 @@ def escanear_episodios():
 
             ep_key = f"S{season_num:02d}E{ep_num:02d}"
 
-            # Solo audios y subtítulos del manifiesto HLS
             hls_url = obtener_hls_url(ep_id)
             audios, subs = obtener_idiomas_de_m3u8(hls_url) if hls_url else ([], [])
 
@@ -155,4 +151,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
