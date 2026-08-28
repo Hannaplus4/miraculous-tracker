@@ -1,40 +1,54 @@
-name: Tracker Miraculous
+import requests, json, os
+from m3u8 import parse as m3u8parser
 
-on:
-  schedule:
-    - cron: '*/30 * * * *' # Se ejecuta cada 30 minutos
-  workflow_dispatch: # Permite ejecutarlo manualmente
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "Origin": "https://tv.apple.com",
+    "Referer": "https://tv.apple.com/"
+}
 
-jobs:
-  run-tracker:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+def ReplaceCodeLanguages(X):
+    X = X.lower().replace('_subtitle_dialog_0', '').replace('_dialog_0', '')
+    return X.replace('es-mx', 'es-la').replace('es-419', 'es-la').replace('es-us', 'es-la')
 
-    steps:
-      - name: Descargar el repositorio
-        uses: actions/checkout@v4
+def obtener_idiomas_de_m3u8(m3u8_url):
+    try:
+        res = requests.get(m3u8_url, headers=HEADERS)
+        if res.status_code != 200: return [], []
+        audios, subtitulos = set(), set()
+        for media in m3u8parser(res.text).get('media', []):
+            lang = media.get('language')
+            if not lang: continue
+            lang_clean = ReplaceCodeLanguages(lang)
+            if media['type'] == 'AUDIO': audios.add(lang_clean)
+            elif media['type'] == 'SUBTITLES':
+                sub_tag = f"{lang_clean}-forced" if media.get('forced') == 'YES' else lang_clean
+                subtitulos.add(sub_tag)
+        return sorted(list(audios)), sorted(list(subtitulos))
+    except:
+        return [], []
 
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+def escanear_episodios():
+    api_url = "https://tv.apple.com/api/uts/v3/shows/umc.cmc.7adu8wmjugygtdhfamor58yn8/episodes?caller=web&locale=en-US&pfm=web"
+    res = requests.get(api_url, headers=HEADERS)
+    if res.status_code != 200: return {}
+    episodios_info = {}
+    for ep in res.json().get('data', {}).get('episodes', []):
+        ep_key = f"S{ep.get('seasonNumber'):02d}E{ep.get('episodeNumber'):02d}"
+        playables = ep.get('playables', [])
+        hls_url = playables[0].get('assets', {}).get('hlsUrl') if playables else None
+        audios, subs = obtener_idiomas_de_m3u8(hls_url) if hls_url else ([], [])
+        episodios_info[ep_key] = {"titulo": ep.get('title'), "audios": audios, "subtitulos": subs}
+    return episodios_info
 
-      - name: Instalar dependencias
-        run: pip install requests m3u8
+def main():
+    archivo, datos_viejos = 'datos.json', {}
+    if os.path.exists(archivo):
+        with open(archivo, 'r', encoding='utf-8') as f: datos_viejos = json.load(f)
+    nuevos_datos = escanear_episodios()
+    if nuevos_datos:
+        with open(archivo, 'w', encoding='utf-8') as f:
+            json.dump(nuevos_datos, f, indent=4, ensure_ascii=False)
 
-      - name: Ejecutar el script
-        run: python tracker.py
-
-      - name: Guardar cambios en el repositorio
-        run: |
-          # Solo intenta subir el archivo si Python logró crearlo
-          if [ -f datos.json ]; then
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add datos.json
-            git diff-index --quiet HEAD || (git commit -m "Actualización automática de idiomas" && git push)
-            echo "Datos actualizados y subidos con éxito."
-          else
-            echo "El archivo datos.json no se generó. Posible bloqueo temporal de Apple TV."
-          fi
+if __name__ == "__main__":
+    main()
