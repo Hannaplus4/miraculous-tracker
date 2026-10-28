@@ -8564,7 +8564,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E01": {
+    "CHIBI-S02E01": {
         "titulo": "Charmed",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8593,7 +8593,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E02": {
+    "CHIBI-S02E02": {
         "titulo": "Careless Whispurr",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8622,38 +8622,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E03": {
-        "titulo": "The Eiffel Tower",
-        "tipo": "episodio",
-        "show": "Miraculous Chibi",
-        "audios": [
-            "Portuguese"
-        ],
-        "subtitulos": [
-            "French",
-            "Arabic",
-            "Cantonese",
-            "Czech",
-            "Danish",
-            "Dutch",
-            "Finnish",
-            "German",
-            "Greek",
-            "Hebrew",
-            "Hungarian",
-            "Italian",
-            "Japanese",
-            "Korean",
-            "Norwegian",
-            "Polish",
-            "Portuguese",
-            "Romanian",
-            "es",
-            "Swedish",
-            "Turkish"
-        ]
-    },
-    "CHIBI-S01E04": {
+    "CHIBI-S02E03": {
         "titulo": "I Love Paris",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8684,8 +8653,8 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E05": {
-        "titulo": "The Ice Cream",
+    "CHIBI-S02E05": {
+        "titulo": "The Eiffel Tower",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
         "audios": [
@@ -8715,7 +8684,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E06": {
+    "CHIBI-S02E06": {
         "titulo": "Collector",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8746,7 +8715,38 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E07": {
+    "CHIBI-S02E07": {
+        "titulo": "The Ice Cream",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E08": {
         "titulo": "Picture Perfect",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8775,7 +8775,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E08": {
+    "CHIBI-S02E09": {
         "titulo": "The Diary",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8804,7 +8804,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E09": {
+    "CHIBI-S02E10": {
         "titulo": "Love is blind",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8833,7 +8833,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E10": {
+    "CHIBI-S02E11": {
         "titulo": "The Plant",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8862,7 +8862,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E11": {
+    "CHIBI-S02E12": {
         "titulo": "Too many emotions",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8891,37 +8891,8 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E12": {
+    "CHIBI-S02E13": {
         "titulo": "The Theater",
-        "tipo": "episodio",
-        "show": "Miraculous Chibi",
-        "audios": [
-            "Portuguese"
-        ],
-        "subtitulos": [
-            "French",
-            "Cantonese",
-            "Czech",
-            "Danish",
-            "Dutch",
-            "Finnish",
-            "German",
-            "Greek",
-            "Hungarian",
-            "Italian",
-            "Japanese",
-            "Korean",
-            "Norwegian",
-            "Polish",
-            "Portuguese",
-            "Romanian",
-            "es",
-            "Swedish",
-            "Turkish"
-        ]
-    },
-    "CHIBI-S01E13": {
-        "titulo": "Cat Noir VS Marinette",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
         "audios": [
@@ -8950,7 +8921,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E14": {
+    "CHIBI-S02E14": {
         "titulo": "Ping pong game",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -8980,7 +8951,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E15": {
+    "CHIBI-S02E15": {
         "titulo": "Purrfectly Cursed",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9010,7 +8981,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E16": {
+    "CHIBI-S02E17": {
         "titulo": "The smile",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9040,7 +9011,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E17": {
+    "CHIBI-S02E18": {
         "titulo": "The Macaron",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9070,7 +9041,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E18": {
+    "CHIBI-S02E19": {
         "titulo": "Super-heroes",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9100,7 +9071,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E19": {
+    "CHIBI-S02E20": {
         "titulo": "The Jambon-Beurre",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9130,7 +9101,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E20": {
+    "CHIBI-S02E22": {
         "titulo": "Drawn in the Stars",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9160,7 +9131,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E21": {
+    "CHIBI-S02E23": {
         "titulo": "The Bodyguard",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9190,7 +9161,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E22": {
+    "CHIBI-S02E24": {
         "titulo": "The Yoyo",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9220,67 +9191,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E23": {
-        "titulo": "Ice Cream Day",
-        "tipo": "episodio",
-        "show": "Miraculous Chibi",
-        "audios": [
-            "Portuguese"
-        ],
-        "subtitulos": [
-            "French",
-            "Cantonese",
-            "Czech",
-            "Danish",
-            "Dutch",
-            "Finnish",
-            "German",
-            "Greek",
-            "Hebrew",
-            "Hungarian",
-            "Italian",
-            "Japanese",
-            "Korean",
-            "Norwegian",
-            "Polish",
-            "Portuguese",
-            "Romanian",
-            "es",
-            "Swedish",
-            "Turkish"
-        ]
-    },
-    "CHIBI-S01E24": {
-        "titulo": "Panic at the Picnic",
-        "tipo": "episodio",
-        "show": "Miraculous Chibi",
-        "audios": [
-            "Portuguese"
-        ],
-        "subtitulos": [
-            "French",
-            "Cantonese",
-            "Czech",
-            "Danish",
-            "Dutch",
-            "Finnish",
-            "German",
-            "Greek",
-            "Hebrew",
-            "Hungarian",
-            "Italian",
-            "Japanese",
-            "Korean",
-            "Norwegian",
-            "Polish",
-            "Portuguese",
-            "Romanian",
-            "es",
-            "Swedish",
-            "Turkish"
-        ]
-    },
-    "CHIBI-S01E25": {
+    "CHIBI-S02E25": {
         "titulo": "The Spider",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9312,8 +9223,68 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E26": {
-        "titulo": "The Party",
+    "CHIBI-S02E26": {
+        "titulo": "Ice Cream Day",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E27": {
+        "titulo": "Panic at the Picnic",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E28": {
+        "titulo": "The Challenge",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
         "audios": [],
@@ -9344,7 +9315,39 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E30": {
+    "CHIBI-S02E29": {
+        "titulo": "Tiny Ghost",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E30": {
         "titulo": "The Rose",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9376,7 +9379,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E31": {
+    "CHIBI-S02E31": {
         "titulo": "The Portrait",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9408,8 +9411,8 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E32": {
-        "titulo": "The Un-Love Potion",
+    "CHIBI-S02E32": {
+        "titulo": "The Party",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
         "audios": [],
@@ -9440,7 +9443,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E33": {
+    "CHIBI-S02E33": {
         "titulo": "Kitten in Distress",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9472,8 +9475,8 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E34": {
-        "titulo": "Hiccup!",
+    "CHIBI-S02E34": {
+        "titulo": "The Un-Love Potion",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
         "audios": [],
@@ -9504,7 +9507,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E35": {
+    "CHIBI-S02E35": {
         "titulo": "The Smell",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9536,7 +9539,7 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E36": {
+    "CHIBI-S02E36": {
         "titulo": "The Gift",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
@@ -9568,8 +9571,104 @@
             "Turkish"
         ]
     },
-    "CHIBI-S01E37": {
+    "CHIBI-S02E37": {
+        "titulo": "Hiccup!",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E38": {
+        "titulo": "The Ragdoll",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E39": {
         "titulo": "The Label",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [],
+        "subtitulos": [
+            "Arabic",
+            "Cantonese",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "Finnish",
+            "French",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Malay",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Thai",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E40": {
+        "titulo": "Latte Art",
         "tipo": "episodio",
         "show": "Miraculous Chibi",
         "audios": [],
