@@ -8896,18 +8896,17 @@
         "tipo": "episodio",
         "show": "Miraculous Chibi",
         "audios": [
-            "Czech",
-            "Dutch",
             "Portuguese"
         ],
         "subtitulos": [
             "French",
             "Cantonese",
+            "Czech",
             "Danish",
+            "Dutch",
             "Finnish",
             "German",
             "Greek",
-            "Hebrew",
             "Hungarian",
             "Italian",
             "Japanese",
@@ -8964,6 +8963,36 @@
             "Czech",
             "Danish",
             "Dutch",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish",
+            "Turkish"
+        ]
+    },
+    "CHIBI-S02E16": {
+        "titulo": "Cat Noir VS Marinette",
+        "tipo": "episodio",
+        "show": "Miraculous Chibi",
+        "audios": [
+            "Czech",
+            "Dutch",
+            "Portuguese"
+        ],
+        "subtitulos": [
+            "French",
+            "Cantonese",
+            "Danish",
             "Finnish",
             "German",
             "Greek",
