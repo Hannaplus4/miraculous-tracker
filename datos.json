@@ -7256,6 +7256,60 @@
             "Thai"
         ]
     },
+    "S07E01": {
+        "titulo": "Replay Value",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
+        "audios": [
+            "en"
+        ],
+        "subtitulos": []
+    },
+    "S07E02": {
+        "titulo": "Chrysalis",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
+        "audios": [
+            "en"
+        ],
+        "subtitulos": []
+    },
+    "S07E03": {
+        "titulo": "Dislove",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
+        "audios": [
+            "en"
+        ],
+        "subtitulos": []
+    },
+    "S07E04": {
+        "titulo": "Manageman",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
+        "audios": [
+            "en"
+        ],
+        "subtitulos": []
+    },
+    "S07E05": {
+        "titulo": "Marinette Dupain-Cheng",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
+        "audios": [
+            "en"
+        ],
+        "subtitulos": []
+    },
+    "S07E06": {
+        "titulo": "Glaciator",
+        "tipo": "episodio",
+        "show": "Miraculous (principal)",
+        "audios": [
+            "en"
+        ],
+        "subtitulos": []
+    },
     "ALT-S01E01": {
         "titulo": "Marinette in Paris",
         "tipo": "episodio",
