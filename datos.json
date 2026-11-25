@@ -7261,54 +7261,191 @@
         "tipo": "episodio",
         "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en",
+            "French",
+            "Czech",
+            "Danish",
+            "Finnish",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "French",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Hebrew",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Norwegian",
+            "Portuguese",
+            "es",
+            "Swedish"
+        ]
     },
     "S07E02": {
         "titulo": "Chrysalis",
         "tipo": "episodio",
         "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en",
+            "French",
+            "Czech",
+            "Danish",
+            "Finnish",
+            "German",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "Romanian",
+            "es",
+            "Swedish"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "French",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "German",
+            "Hebrew",
+            "Hungarian",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Norwegian",
+            "Portuguese",
+            "es",
+            "Swedish"
+        ]
     },
     "S07E03": {
         "titulo": "Dislove",
         "tipo": "episodio",
         "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en",
+            "French",
+            "Czech",
+            "Danish",
+            "Finnish",
+            "Greek",
+            "Hebrew",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "es",
+            "Swedish"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "French",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Hebrew",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Norwegian",
+            "Portuguese",
+            "es",
+            "Swedish"
+        ]
     },
     "S07E04": {
         "titulo": "Manageman",
         "tipo": "episodio",
         "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en",
+            "French",
+            "Danish",
+            "Finnish",
+            "Greek",
+            "Hebrew",
+            "Hungarian",
+            "Italian",
+            "Norwegian",
+            "Polish",
+            "Portuguese",
+            "es",
+            "Swedish"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "French",
+            "Chinese",
+            "Traditional",
+            "Danish",
+            "Finnish",
+            "Hebrew",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Malay",
+            "Norwegian",
+            "Portuguese",
+            "es",
+            "Swedish"
+        ]
     },
     "S07E05": {
         "titulo": "Marinette Dupain-Cheng",
         "tipo": "episodio",
         "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en",
+            "French",
+            "Hebrew",
+            "Italian",
+            "Portuguese",
+            "es"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "Chinese",
+            "Traditional",
+            "French",
+            "Hebrew",
+            "Italian",
+            "Portuguese",
+            "es"
+        ]
     },
     "S07E06": {
         "titulo": "Glaciator",
         "tipo": "episodio",
         "show": "Miraculous (principal)",
         "audios": [
-            "en"
+            "en",
+            "French",
+            "Italian",
+            "Portuguese",
+            "es"
         ],
-        "subtitulos": []
+        "subtitulos": [
+            "French",
+            "Italian",
+            "Portuguese",
+            "es"
+        ]
     },
     "ALT-S01E01": {
         "titulo": "Marinette in Paris",
