@@ -7427,6 +7427,7 @@
             "Traditional",
             "French",
             "Hebrew",
+            "Indonesian",
             "Italian",
             "Portuguese",
             "es"
@@ -7445,7 +7446,10 @@
         ],
         "subtitulos": [
             "French",
+            "Korean",
+            "Indonesian",
             "Italian",
+            "Malay",
             "Portuguese",
             "es"
         ]
